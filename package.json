@@ -1,8 +1,13 @@
 {
-  "name": "token-bucket",
+  "name": "@p-vbordei/token-bucket",
   "version": "0.1.0",
   "description": "Token-bucket rate limiter with continuous refill, async waiting, and a keyed registry (per-IP, per-user, ...). Zero dependencies.",
-  "keywords": ["rate-limit", "token-bucket", "throttle", "leaky-bucket"],
+  "keywords": [
+    "rate-limit",
+    "token-bucket",
+    "throttle",
+    "leaky-bucket"
+  ],
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -12,7 +17,11 @@
       "import": "./dist/index.js"
     }
   },
-  "files": ["dist", "README.md", "LICENSE"],
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
   "scripts": {
     "build": "tsc",
     "test": "vitest run",

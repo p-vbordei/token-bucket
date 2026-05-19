@@ -5,7 +5,7 @@
 A correct, dependency-free token-bucket rate limiter. Single bucket or a keyed registry (per-IP, per-user, ...). Continuous refill, sync or async wait. Pluggable clock for tests.
 
 ```ts
-import { TokenBucket, TokenBucketRegistry } from "token-bucket";
+import { TokenBucket, TokenBucketRegistry } from "@p-vbordei/token-bucket";
 
 // Single bucket: 100-burst capacity, 10 tokens/sec steady-state
 const b = new TokenBucket({ capacity: 100, refillPerSecond: 10 });
@@ -31,7 +31,7 @@ if (reg.tryTake(req.ip)) {
 ## Install
 
 ```sh
-npm install token-bucket
+npm install @p-vbordei/token-bucket
 ```
 
 ## API
