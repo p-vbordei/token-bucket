@@ -58,11 +58,12 @@
   },
   "homepage": "https://github.com/p-vbordei/token-bucket#readme",
   "devDependencies": {
-    "typescript": "^5.5.0",
-    "vitest": "^2.0.0",
-    "tsup": "^8.0.0",
     "@vitest/coverage-v8": "^2.1.9",
-    "prettier": "^3.3.0"
+    "fast-check": "^4.8.0",
+    "prettier": "^3.3.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.5.0",
+    "vitest": "^2.0.0"
   },
   "sideEffects": false,
   "publishConfig": {
