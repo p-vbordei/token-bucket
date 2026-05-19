@@ -2,6 +2,10 @@
 
 [![ci](https://github.com/p-vbordei/token-bucket/actions/workflows/ci.yml/badge.svg)](https://github.com/p-vbordei/token-bucket/actions/workflows/ci.yml)
 
+[![npm](https://img.shields.io/npm/v/%40p-vbordei%2Ftoken-bucket.svg)](https://www.npmjs.com/package/@p-vbordei/token-bucket)
+[![downloads](https://img.shields.io/npm/dm/%40p-vbordei%2Ftoken-bucket.svg)](https://www.npmjs.com/package/@p-vbordei/token-bucket)
+[![bundle](https://img.shields.io/bundlejs/size/%40p-vbordei%2Ftoken-bucket)](https://bundlejs.com/?q=%40p-vbordei%2Ftoken-bucket)
+
 A correct, dependency-free token-bucket rate limiter. Single bucket or a keyed registry (per-IP, per-user, ...). Continuous refill, sync or async wait. Pluggable clock for tests.
 
 ```ts
