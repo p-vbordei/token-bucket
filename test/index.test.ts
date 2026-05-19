@@ -84,7 +84,10 @@ describe("take (async)", () => {
   it("resolves immediately when available", async () => {
     const b = new TokenBucket({ capacity: 5, refillPerSecond: 1 });
     await expect(b.take(2)).resolves.toBeUndefined();
-    expect(b.peek()).toBe(3);
+    // peek() applies refill, so a fraction of a token may have accrued between
+    // the `take` and the `peek`. Assert within rounding tolerance.
+    expect(b.peek()).toBeGreaterThanOrEqual(3);
+    expect(b.peek()).toBeLessThan(3.1);
   });
 
   it("rejects when wait would exceed timeoutMs", async () => {
