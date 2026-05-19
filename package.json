@@ -1,0 +1,43 @@
+{
+  "name": "token-bucket",
+  "version": "0.1.0",
+  "description": "Token-bucket rate limiter with continuous refill, async waiting, and a keyed registry (per-IP, per-user, ...). Zero dependencies.",
+  "keywords": ["rate-limit", "token-bucket", "throttle", "leaky-bucket"],
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": ["dist", "README.md", "LICENSE"],
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prepublishOnly": "npm run build"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "author": {
+    "name": "Vlad Bordei",
+    "email": "bordeivlad@gmail.com",
+    "url": "https://github.com/p-vbordei"
+  },
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/p-vbordei/token-bucket.git"
+  },
+  "bugs": {
+    "url": "https://github.com/p-vbordei/token-bucket/issues"
+  },
+  "homepage": "https://github.com/p-vbordei/token-bucket#readme",
+  "devDependencies": {
+    "typescript": "^5.5.0",
+    "vitest": "^2.0.0"
+  }
+}
