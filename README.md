@@ -1,5 +1,7 @@
 # token-bucket
 
+[![ci](https://github.com/p-vbordei/token-bucket/actions/workflows/ci.yml/badge.svg)](https://github.com/p-vbordei/token-bucket/actions/workflows/ci.yml)
+
 A correct, dependency-free token-bucket rate limiter. Single bucket or a keyed registry (per-IP, per-user, ...). Continuous refill, sync or async wait. Pluggable clock for tests.
 
 ```ts
