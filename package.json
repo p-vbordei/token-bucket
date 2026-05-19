@@ -1,6 +1,6 @@
 {
   "name": "@p-vbordei/token-bucket",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Token-bucket rate limiter with continuous refill, async waiting, and a keyed registry (per-IP, per-user, ...). Zero dependencies.",
   "keywords": [
     "rate-limit",
